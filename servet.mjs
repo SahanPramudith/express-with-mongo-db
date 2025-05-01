@@ -1,6 +1,6 @@
 import express,{ json } from "express"
 import "dotenv/config"
-import connectdb from "./src/model/user.mjs";
+import connectdb from "./src/db/user.mjs";
 
 console.log(process.env.MONGODB_URI);
 
