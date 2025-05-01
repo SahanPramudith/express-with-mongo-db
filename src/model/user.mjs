@@ -1,5 +1,7 @@
-import { connect } from "mongoose";
+import { mongoose } from "mongoose";
 
-const connectdb=connect(process.env.MONGO_URI)
+const connectdb = mongoose.connect(process.env.MONGODB_URI, {
+    dbName: "sample_mongo", // helps target the right DB
+  });
 
 export default connectdb;

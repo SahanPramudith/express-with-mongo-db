@@ -14,9 +14,7 @@ connectdb.then(()=>{
     console.log("Connected to MongoDB")
     server.listen(PORT,()=>{
         console.log(`Server is running on port ${PORT}`)
-    })  
+    })
+}).catch((err)=>{
+    console.log(err)
 })
-.catch((err)=>{
-    console.log("Error connecting to MongoDB",err)
-}
-)
