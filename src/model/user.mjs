@@ -1,4 +1,3 @@
-
 import mongoose, { model } from "mongoose";
 
 const userSchema=new mongoose.Schema({
@@ -8,5 +7,5 @@ const userSchema=new mongoose.Schema({
     email:String
 });
 
-const User=model(User,userSchema);
+const User = model("User", userSchema);
 export default User;
